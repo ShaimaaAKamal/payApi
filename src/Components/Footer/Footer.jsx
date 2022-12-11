@@ -16,9 +16,9 @@ export default function Footer() {
               </Link>
             </div>
             <div className='d-flex flex-column d-md-block py-4  ps-lg-5 text-center text-md-start'>
-              <Link className="text-decoration-none textLightBlue p-2  py-md-0" to='/Pricing'>Pricing</Link> 
-              <Link className="text-decoration-none textLightBlue p-2  py-md-0" to='/About'>About</Link> 
-              <Link className="text-decoration-none textLightBlue p-2 py-md-0" to='/Contact'>Contact</Link> 
+              <Link className="text-decoration-none textLightBlue p-2  py-md-0" to='/pricing'>Pricing</Link> 
+              <Link className="text-decoration-none textLightBlue p-2  py-md-0" to='/about'>About</Link> 
+              <Link className="text-decoration-none textLightBlue p-2 py-md-0" to='/contact'>Contact</Link> 
           </div>
          </div>
         <div className='socials'>
