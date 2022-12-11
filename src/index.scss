@@ -1,0 +1,54 @@
+$darkPink:#ba4270;
+$linkWaterWhite:#fbfcfe;
+$sanBlue:#36536b;
+$migBlue:#1b262f;
+$charmPink:#da6d97;
+$lightBlue:#6c8294;
+.button{
+    padding:1rem 1.5rem;
+    border-radius: 2rem;
+}
+.mainBtn{
+    @extend .button;
+    background-color: $darkPink;
+    color:$linkWaterWhite;
+    &:hover{
+        background-color: $charmPink;
+    }
+    &:disabled{
+        background-color: $charmPink;
+        opacity:.5;
+    }
+}
+
+.secondaryDarkBtn{
+    @extend .button;
+    background-color: $linkWaterWhite;
+    color:$migBlue;
+    border:1px solid $migBlue;
+    &:hover{
+        background-color: $migBlue;
+        color:$linkWaterWhite
+    }
+    &:disabled{
+        background-color: $linkWaterWhite;
+        color:$lightBlue;
+        border-color: $lightBlue;
+    }
+}
+
+.secondaryLightBtn{
+    @extend .button;
+    background-color: $migBlue;
+    color:$linkWaterWhite;
+    border:1px solid $linkWaterWhite;
+    &:hover{
+        background-color: $linkWaterWhite;
+        color:$migBlue
+    }
+    &:disabled{
+        background-color: $migBlue;
+         color:$lightBlue;
+         border-color: $lightBlue;
+    }
+}
