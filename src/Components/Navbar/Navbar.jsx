@@ -9,14 +9,16 @@ export default function Navbar() {
     menu.classList.add('d-none');
     menu.nextElementSibling.classList.remove('d-none');
     menu.nextElementSibling.classList.add('adjustBtn');
-    navbarCollapse.classList.add('adjustMenu');
+    navbarCollapse.classList.remove('d-none');
+    navbarCollapse.classList.add('d-block');
   }
   const handleCloseMenu=(e)=>{
     const close=document.querySelector('#close');
     const navbarCollapse=document.querySelector('.navbar-collapse');
     close.classList.add('d-none');
     close.previousElementSibling.classList.remove('d-none');
-    navbarCollapse.classList.remove('adjustMenu');
+    navbarCollapse.classList.add('d-none');
+    navbarCollapse.classList.remove('d-block');
   }
   return (
    <nav className="navbar navbar-expand-lg py-3">
