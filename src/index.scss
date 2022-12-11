@@ -72,6 +72,9 @@ $lightBlue:#6c8294;
         position: relative;
         z-index:4;
       }
+      .scheduleBtn{
+        width:80%;
+      }
    
 }
 
@@ -86,6 +89,9 @@ $lightBlue:#6c8294;
         z-index:4;
         background-color: #1b262f !important;
         border-radius: 0 !important;
+        svg{
+            margin: 1rem;
+        }
  }
  .adjustMenu{
         background-color: #1b262f;
@@ -121,6 +127,9 @@ $lightBlue:#6c8294;
                                 color:$migBlue !important;
                             }
                             }
+                    .scheduleBtn{
+                        width:auto;
+                    }
             }
              
             

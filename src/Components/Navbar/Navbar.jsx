@@ -45,7 +45,7 @@ export default function Navbar() {
                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
               </li>
             </ul>
-            <button className="mainBtn">Schedule a Demo</button>
+            <button className="mainBtn scheduleBtn">Schedule a Demo</button>
         </div>
       </div>
 </nav>
