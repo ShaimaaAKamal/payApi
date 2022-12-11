@@ -11,6 +11,12 @@ $lightBlue:#6c8294;
     font-size: 15px;
     font-weight: bold;
 }
+.textLightBlue{
+    color:$lightBlue;
+}
+.bgDark{
+    background-color: $migBlue;
+}
 .mainBtn{
     @extend .button;
     background-color: $darkPink;
@@ -102,7 +108,15 @@ $lightBlue:#6c8294;
         width: 80% !important ;
         z-index:2 !important;
     }
-
+.logoDiv a{
+    font-weight: 500;
+   &:hover{
+    color:$linkWaterWhite !important;
+      }
+}
+.socials a svg:hover path{
+    fill:#da6d97 !important;
+}
 
 @media screen and (min-width:768px){
             .navbar-expand-lg{
@@ -130,6 +144,14 @@ $lightBlue:#6c8294;
                     .scheduleBtn{
                         width:auto;
                     }
+            }
+
+            .logoDiv{
+                width:70%;
+            }
+            .socials{
+                width:30%;
+                text-align: right;
             }
              
             
