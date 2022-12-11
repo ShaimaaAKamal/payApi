@@ -22,7 +22,7 @@ export default function Navbar() {
   }
   return (
    <nav className="navbar navbar-expand-lg py-3">
-      <div className="container-fluid">
+      <div className="container-md">
         <NavLink className="navbar-brand me-4" to=""><img src={logo} alt="logo Image" className='w-100'/></NavLink>
         <button className="navbar-toggler" onClick={handleOpenMenu} id='menu' type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <svg width="28" height="17" xmlns="http://www.w3.org/2000/svg">
