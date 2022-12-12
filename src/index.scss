@@ -173,6 +173,16 @@ nav{
 .imageHomeWidth{
     width:100%;
 }
+.whoWork{
+    background-image: url('./assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position:center 300%;
+}
+
+.implementInfo{
+    position: relative;
+    top:-20px;
+}
 
 @media screen and (min-width:460px){
             #emailInput{
@@ -225,6 +235,13 @@ nav{
                 width:30%;
                 text-align: right;
             }
+            .whoWork{
+                background-position:center 200%;
+           }
+
+           .implementInfo{
+                top:-60px;
+            }
              
             
 }
@@ -237,7 +254,13 @@ nav{
    .imageHomeHeading,.workOrder{
     order:2;
    }
-
+   .whoWork{
+    background-position:-40% 80%;
+}
+    .implementInfo{
+        position: static;
+            }
+             
 }
 
 @media screen and (min-width:1200px){
