@@ -1,31 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:wght@200;400&display=swap');
 $darkPink:#ba4270;
 $linkWaterWhite:#fbfcfe;
 $sanBlue:#36536b;
 $migBlue:#1b262f;
 $charmPink:#da6d97;
 $lightBlue:#6c8294;
+
+html{
+    font-family: 'Public Sans', sans-serif ;
+}
+.fmHeading{
+    font-family: 'DM Serif Display', serif;
+}
+
+.w-90{
+    width: 90% !important;
+}
+.bigContainer{
+    background-image:url('./assets/shared/desktop/bg-pattern-circle.svg'),linear-gradient(#ECF3F9,#ECF3F9);
+    background-repeat: no-repeat;
+    background-position: center -100%;
+}
 .button{
     padding:.7rem 1.5rem;
-    border-radius: 2.2rem;
+    border-radius: 2.2rem !important;
     border:none;
     font-size: 15px;
-    font-weight: bold;
+    font-weight:500;
 }
 .textLightBlue{
     color:$lightBlue;
+}
+.textSanBlue{
+    color:$sanBlue;
 }
 .bgDark{
     background-color: $migBlue;
 }
 .mainBtn{
     @extend .button;
-    background-color: $darkPink;
-    color:$linkWaterWhite;
+    background-color: $darkPink !important;
+    color:$linkWaterWhite !important;
     &:hover{
-        background-color: $charmPink;
+        background-color: $charmPink !important;
     }
     &:disabled{
-        background-color: $charmPink;
+        background-color: $charmPink !important; 
         opacity:.5;
     }
 }
@@ -61,11 +81,12 @@ $lightBlue:#6c8294;
          border-color: $lightBlue;
     }
 }
-
-.navbar-expand-lg{
-    position: fixed;
-    top:0;
+nav{
+    position: fixed !important;
+    top:0px;
     width: 100%;
+}
+.navbar-expand-lg{
     .nav-link{
         font-size: 15px !important;
         font-weight: 500 !important;
@@ -118,7 +139,53 @@ $lightBlue:#6c8294;
     fill:#da6d97 !important;
 }
 
+.parent{
+    padding-top:60px;
+}
+#emailInput{
+    border:none;
+    z-index:2;
+    &:focus{
+        box-shadow: none;
+        border:1px solid $charmPink;
+        border-right:none;
+    }
+    &::placeholder{
+        padding-left:.5rem;
+        font-size: 1rem;
+        line-height: 1.3;
+        color:$lightBlue;
+        font-weight: 500;
+    }
+}
+#enterEmailBtn{
+    z-index:4;
+    position: absolute;
+    right:0px;
+    height: 100%;
+    border:none;
+}
+.imageHomeWidth{
+    width:100%;
+}
+
+@media screen and (min-width:460px){
+            #emailInput{
+                &::placeholder{
+                    padding-left:1rem;
+                }
+            }
+            .bigContainer{
+                background-position: center -80%;
+            }
+            .imageHomeWidth{
+                width: auto;
+            }
+    }
 @media screen and (min-width:768px){
+            .bigContainer{
+                background-position: center -130%;
+            }    
             .navbar-expand-lg{
                      .navbar-toggler {
                             display: none;
@@ -156,3 +223,19 @@ $lightBlue:#6c8294;
              
             
 }
+
+@media screen and (min-width:992px){
+    .bigContainer{
+    background-position: 150% -450%;
+   }
+   .imageHomeHeading{
+    order:2;
+   }
+}
+
+@media screen and (min-width:1200px){
+    .bigContainer{
+    background-position: 110% -480%;
+   }
+}
+
