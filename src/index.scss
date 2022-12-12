@@ -13,6 +13,10 @@ html{
     font-family: 'DM Serif Display', serif;
 }
 
+.textLight{
+    color: $linkWaterWhite;
+}
+
 .w-90{
     width: 90% !important;
 }
@@ -228,9 +232,11 @@ nav{
     .bigContainer{
     background-position: 150% -450%;
    }
-   .imageHomeHeading{
+
+   .imageHomeHeading,.workOrder{
     order:2;
    }
+
 }
 
 @media screen and (min-width:1200px){
