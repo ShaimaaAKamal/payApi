@@ -20,10 +20,11 @@ html{
 .w-90{
     width: 90% !important;
 }
-.bigContainer{
-    background-image:url('./assets/shared/desktop/bg-pattern-circle.svg'),linear-gradient(#ECF3F9,#ECF3F9);
+.home{
+    background-image:url('./assets/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
-    background-position: center -100%;
+    background-position: center -400px;
+    padding-top: 60px;
 }
 .button{
     padding:.7rem 1.5rem;
@@ -144,9 +145,6 @@ nav{
     fill:#da6d97 !important;
 }
 
-.parent{
-    padding-top:60px;
-}
 #emailInput{
     border:none;
     z-index:2;
@@ -207,23 +205,25 @@ nav{
     background-repeat: no-repeat;
     background-position: center -40%;
 }
-
+.bigContainer{
+background-color: #ECF3F9;
+}
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
                     padding-left:1rem;
                 }
             }
-            .bigContainer{
-                background-position: center -80%;
+            .home{
+                background-position: center -300px;
             }
             .imageHomeWidth{
                 width: auto;
             }
     }
 @media screen and (min-width:768px){
-            .bigContainer{
-                background-position: center -130%;
+            .home{
+                background-position: center -400px;
             }    
             .navbar-expand-lg{
                      .navbar-toggler {
@@ -292,8 +292,8 @@ nav{
 }
 
 @media screen and (min-width:992px){
-    .bigContainer{
-    background-position: 150% -450%;
+    .home{
+    background-position: 150% -200px;
    }
 
    .imageHomeHeading,.workOrder{
@@ -317,8 +317,8 @@ nav{
 }
 
 @media screen and (min-width:1200px){
-    .bigContainer{
-    background-position: 110% -480%;
+    .home{
+    background-position: 110% -200px;
    }
     .readyToStartWidth{
         width: 40% !important;
