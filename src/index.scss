@@ -308,11 +308,11 @@ background-color: #ECF3F9;
     .readyToStartWidth{
         width: 50% !important;
     }
-// .simpleUi{
-//     background-image:url('./assets/shared/desktop/bg-pattern-circle.svg');
-//     background-repeat: no-repeat;
-//     // background-position: 210% 30%;
-// }
+.simpleUi{
+    background-image:url('./assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% + 500px) -150px;
+}
              
 }
 
@@ -323,9 +323,9 @@ background-color: #ECF3F9;
     .readyToStartWidth{
         width: 40% !important;
     }
-//    .simpleUi{
-//     background-position: -140% 50%;
-// }
+   .simpleUi{
+    background-position: calc(100% + 450px) -80px; 
+}
    
 }
 
