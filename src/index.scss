@@ -183,6 +183,24 @@ nav{
     position: relative;
     top:-20px;
 }
+.readyToStartWidth{
+    display: block !important;
+    input{
+        width: 90% !important;
+        margin: 0 auto 1rem;
+        &:focus{
+        border:1px solid $charmPink !important;
+    }
+    }
+
+    #enterEmailBtn{
+        padding:.8rem 0;
+        position: static;
+        width: 90% !important;
+        display: block;
+        margin: 0 auto;
+    }
+}
 
 @media screen and (min-width:460px){
             #emailInput{
@@ -243,6 +261,24 @@ nav{
                 top:-60px;
             }
              
+            .readyToStartWidth{
+                width: 80% !important;
+                display: flex !important;
+                input{
+                    width: auto !important;
+                    margin: 0 ;
+                     &:focus{
+                        border-right:none !important;
+                    }
+                }
+                #enterEmailBtn{
+                    padding: 0;
+                    position: absolute;
+                    width: auto !important;
+                    display: inline;
+                    margin: 0;
+                }
+}
             
 }
 
@@ -260,6 +296,14 @@ nav{
     .implementInfo{
         position: static;
             }
+    .readyToStartWidth{
+        width: 50% !important;
+    }
+// .simpleUi{
+//     background-image:url('./assets/shared/desktop/bg-pattern-circle.svg');
+//     background-repeat: no-repeat;
+//     // background-position: 210% 30%;
+// }
              
 }
 
@@ -267,5 +311,12 @@ nav{
     .bigContainer{
     background-position: 110% -480%;
    }
+    .readyToStartWidth{
+        width: 40% !important;
+    }
+//    .simpleUi{
+//     background-position: -140% 50%;
+// }
+   
 }
 
