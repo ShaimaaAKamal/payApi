@@ -202,6 +202,12 @@ nav{
     }
 }
 
+.footer{
+    background-image: url('./assets//shared//desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: center -40%;
+}
+
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
@@ -278,6 +284,9 @@ nav{
                     display: inline;
                     margin: 0;
                 }
+}
+.footer{
+    background-image: unset;
 }
             
 }

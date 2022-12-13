@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <div className='bgDark'>
+    <div className='bgDark footer'>
          <div className="container-md py-md-3 py-5 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
          <div className='logoDiv d-md-flex align-items-center justify-content-md-between justify-content-lg-start'>
              <div>
