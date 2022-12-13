@@ -7,6 +7,7 @@ import HomeCard from './HomeCard/HomeCard';
 import financeImage from '../../assets/home/desktop/icon-personal-finances.svg';
 import paymentImage from '../../assets/home/desktop/icon-consumer-payments.svg';
 import coverageImage from '../../assets/home/desktop/icon-banking-and-coverage.svg';
+import ReadyToStart from '../ReadyToStart/ReadyToStart';
 
 
 export default function Home() {
@@ -32,19 +33,9 @@ export default function Home() {
                 </HomeCard>
             </div> )
           }
-         
-            {/* <div className="col-md-4">
-                <HomeCard image={coverageImage} title='Banking & Coverage'>
-                  With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.
-                </HomeCard>
-            </div>
-            <div className="col-md-4">
-                <HomeCard image={paymentImage} title='Consumer Payments'>
-                  It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.
-                </HomeCard>
-            </div> */}
          </div>
       </div>
+      <ReadyToStart/>
     </>
   )
 }
