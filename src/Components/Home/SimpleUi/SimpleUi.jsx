@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from '../../../assets/home/desktop/illustration-simple-ui.svg';
 
+
 export default function SimpleUi() {
   return (
       <section className='simpleUi'>
         <div className='container-md '>
             <section className="row gy-0">
                 <div className="col-lg-6 workOrder">
-                    <div className='text-center ps-5 ps-lg-0'>
+                    <div className='text-center ps-4 ms-2 ms-lg-0 ps-lg-0'>
                         <img src={Image} alt="simple ui images Image" className='w-100'/>
                     </div>
                 </div>
