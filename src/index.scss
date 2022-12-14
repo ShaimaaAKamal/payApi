@@ -251,6 +251,26 @@ background-color: #ECF3F9;
 .topaboutBorder{
     border-top:.2px solid #8DA4B4;
 }
+
+.contact .form-control{
+     background-color: transparent;
+     border-radius: unset;
+     border:none;
+     border-bottom: .2px solid #8DA4B4;
+     &:focus{
+        box-shadow: none;
+        background-color: transparent;
+
+     }
+}
+   #message{
+     color: $lightBlue;  
+    }
+    .form-check-input{
+        background-color: #BCCBD6 !important;
+        border-radius: unset !important;
+        border:none !important;
+    }
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
@@ -401,7 +421,12 @@ background-color: #ECF3F9;
 .aboutHeading{
   width:85%;
 }
-             
+.contactTitle{
+   width:50%;
+}          
+}
+.w-85{
+    width:95% !important;
 }
 
 @media screen and (min-width:1200px){
@@ -420,7 +445,10 @@ background-color: #ECF3F9;
     #aboutImage{
         padding:6rem 0;
         background-position: -570px -25px;
-}
+    }
+    .contactTitle{
+        width:50%;
+    }  
    
 }
 
