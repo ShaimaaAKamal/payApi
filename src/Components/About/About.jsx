@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import AboutLarge from '../../assets/about/desktop/image-team-members.jpg';
+import AboutMedium from '../../assets/about/tablet/image-team-members.jpg';
+import AboutSmall from '../../assets/about/mobile/image-team-members.jpg';
+
 
 export default function About() {
   return (
+    <>
     <div className='about'>
         <div className="container-md">
            <div className="aboutHeading">
@@ -40,5 +45,33 @@ export default function About() {
            </div>
         </div>
     </div>
+    <div className='py-5'>
+      <img src={AboutLarge} alt="large about image" className='w-100 d-none d-lg-inline-block'/>
+      <img src={AboutMedium} alt="medium about image" className='w-100 d-none d-md-inline-block d-lg-none'/>
+      <img src={AboutSmall} alt="small about image" className='w-100  d-md-none'/>
+    </div>
+    <div className="container-md mb-5">
+      <div className="row gy-2">
+         <div className="col-md-4">
+            <div className=' aboutBorder topaboutBorder pt-3 pb-2 text-center text-md-start'>
+                <span className='textLightBlue small mb-2 d-inline-block'>Team Members</span>
+                <h6 className='display-3 textSite fmHeading mb-0 pb-0'>300+</h6>
+            </div>
+         </div>
+          <div className="col-md-4">
+            <div className=' aboutBorder pt-3 pb-2 text-center text-md-start'>
+                <span className='textLightBlue small mb-2 d-inline-block'>Offices in the US</span>
+                <h6 className='display-3 textSite fmHeading mb-0 pb-0'>3</h6>
+            </div>
+         </div>
+          <div className="col-md-4">
+              <div className=' aboutBorder smallaboutBorder pt-3 pb-2 text-center text-md-start'>
+                <span className='textLightBlue small mb-2 d-inline-block'>Transactions analyzed</span>
+                <h6 className='display-3 textSite fmHeading mb-0 pb-0'>10M+</h6>
+            </div>
+         </div>
+      </div>
+    </div>
+    </>
   )
 }
