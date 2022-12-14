@@ -389,7 +389,12 @@ background-color: #ECF3F9;
 .option{
     padding-left: 0px;
 }
-
+#aboutImage{
+    padding:7rem 0 !important;
+    background-image:url('./assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+     background-position: -650px -100px;
+}
 .about{
     background-position: calc(100% + 150px) -550px;
 }
@@ -412,6 +417,10 @@ background-color: #ECF3F9;
     .aboutHeading{
          width:70%;
         }
+    #aboutImage{
+        padding:6rem 0;
+        background-position: -570px -25px;
+}
    
 }
 

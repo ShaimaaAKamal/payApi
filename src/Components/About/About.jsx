@@ -46,7 +46,7 @@ export default function About() {
            </div>
         </div>
     </div>
-    <div className='py-5'>
+    <div className='py-5' id='aboutImage'>
       <img src={AboutLarge} alt="large about image" className='w-100 d-none d-lg-inline-block'/>
       <img src={AboutMedium} alt="medium about image" className='w-100 d-none d-md-inline-block d-lg-none'/>
       <img src={AboutSmall} alt="small about image" className='w-100  d-md-none'/>
