@@ -72,6 +72,38 @@ export default function About() {
          </div>
       </div>
     </div>
+    <div className="container-md">
+           <div className="aboutHeading">
+            <div className="row gx-0 mb-4">
+               <div className="col-md-3">
+                    <div>
+                          <h4 className='text-center text-md-start mb-3 mb-md-0 fmHeading textSanBlue'>The Culture</h4>
+                    </div>
+               </div>
+                <div className="col-md-9">
+                  <div>
+                        <p className='small textLightBlue text-center text-md-start'>
+                          We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title.
+                        </p>
+                  </div>
+               </div>
+            </div>
+              <div className="row gx-0">
+               <div className="col-md-3">
+                    <div>
+                          <h4 className=' fmHeading text-center text-md-start mb-3 mb-md-0 textSanBlue'>The People</h4>
+                    </div>
+               </div>
+                <div className="col-md-9">
+                  <div>
+                        <p className='small textLightBlue text-center text-md-start'>
+                          We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.
+                        </p>
+                  </div>
+               </div>
+            </div>
+           </div>
+    </div>
     </>
   )
 }
