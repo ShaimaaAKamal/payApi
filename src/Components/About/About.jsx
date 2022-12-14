@@ -2,6 +2,7 @@ import React from 'react';
 import AboutLarge from '../../assets/about/desktop/image-team-members.jpg';
 import AboutMedium from '../../assets/about/tablet/image-team-members.jpg';
 import AboutSmall from '../../assets/about/mobile/image-team-members.jpg';
+import ReadyToStart from '../ReadyToStart/ReadyToStart'
 
 
 export default function About() {
@@ -104,6 +105,7 @@ export default function About() {
             </div>
            </div>
     </div>
+    <ReadyToStart/>
     </>
   )
 }
