@@ -235,6 +235,16 @@ background-color: #ECF3F9;
     background-repeat: no-repeat;
     background-position: calc(100% + 400px) -650px;
 }
+.about{
+        background-image: url('./assets//shared//desktop/bg-pattern-circle.svg');
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        background-position: calc(100% + 400px) -650px;
+}
+.aboutHeading{
+  width:95%;
+  margin:0 auto;   
+}
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
@@ -322,6 +332,13 @@ background-color: #ECF3F9;
         padding-top: 50px;
     }
 }
+.about{
+        background-position: calc(100% + 420px) -480px;
+}
+.aboutHeading{
+  width:100%;
+  margin:0 auto;   
+}
 .footer{
     background-image: unset;
 }
@@ -356,6 +373,13 @@ background-color: #ECF3F9;
 .option{
     padding-left: 0px;
 }
+
+.about{
+    background-position: calc(100% + 150px) -550px;
+}
+.aboutHeading{
+  width:85%;
+}
              
 }
 
@@ -368,7 +392,10 @@ background-color: #ECF3F9;
     }
    .simpleUi{
     background-position: calc(100% + 450px) -80px; 
-}
+    }
+    .aboutHeading{
+         width:70%;
+        }
    
 }
 
