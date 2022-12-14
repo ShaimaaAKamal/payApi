@@ -16,7 +16,27 @@ html{
 .textLight{
     color: $linkWaterWhite;
 }
-
+.textSite{
+    color: $darkPink;
+}
+.borderBottom{
+    border-bottom: .2px solid #8DA4B4;
+}
+.borderTop{
+    border-top: .2px solid #8DA4B4;
+}
+.fs-7{
+    font-size: 1.2rem;
+}
+.textTransparent{
+    color:transparent;
+}
+.optionInactive{
+    color:#8DA4B4;
+}
+.option{
+    padding-left: 40%;
+}
 .w-90{
     width: 90% !important;
 }
@@ -61,7 +81,7 @@ html{
     color:$migBlue;
     border:1px solid $migBlue;
     &:hover{
-        background-color: $migBlue;
+        background-color: $migBlue !important;
         color:$linkWaterWhite
     }
     &:disabled{
@@ -208,6 +228,13 @@ nav{
 .bigContainer{
 background-color: #ECF3F9;
 }
+.pricing{
+    padding-top: 100px;
+    height: 200px;
+    background-image: url('./assets//shared//desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% + 400px) -650px;
+}
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
@@ -285,6 +312,16 @@ background-color: #ECF3F9;
                     margin: 0;
                 }
 }
+.option{
+    padding-left: 20%;
+}
+.pricing{
+    height:300px;
+    background-position: calc(100% + 420px) -480px;
+    h1{
+        padding-top: 50px;
+    }
+}
 .footer{
     background-image: unset;
 }
@@ -312,6 +349,12 @@ background-color: #ECF3F9;
     background-image:url('./assets/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
     background-position: calc(100% + 500px) -150px;
+}
+.pricing{
+    background-position: calc(100% + 150px) -550px;
+}
+.option{
+    padding-left: 0px;
 }
              
 }
