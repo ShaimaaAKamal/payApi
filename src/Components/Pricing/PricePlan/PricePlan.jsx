@@ -4,7 +4,7 @@ export default function PricePlan({title,price,planOptionsTitles,planOptions,chi
   return (
     <div className='text-center text-lg-start position-relative'>
       <h2 className='h3 fmHeading textSite mb-3'>{title}</h2>
-      <p className='mb-4 textLightBlue small d-none d-md-block pe-3 pe-md-0 pe-lg-3'>{children}</p>
+      <p className='mb-4 textLightBlue small text-center text-lg-start pe-3 pe-md-0 pe-lg-3'>{children}</p>
       <h4 className='display-5 fmHeading textSanBlue fw-normal borderBottom pb-3'>{price}</h4>
       <div className='d-flex align-items-center py-2 option'>
         <i className="fa-solid fa-check textSite me-3"></i>
@@ -24,7 +24,7 @@ export default function PricePlan({title,price,planOptionsTitles,planOptions,chi
         <span className={`${planOptions[index]? 'textSanBlue':'optionInactive'}`}>{optionTitle}</span>
       </div>)
       } 
-      <div className='borderTop pt-4'>
+      <div className='borderTop pt-4 text-center text-lg-start'>
          <button className='secondaryDarkBtn bg-transparent'>Request Access</button>
       </div>
     </div>
