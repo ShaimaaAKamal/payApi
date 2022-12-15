@@ -208,9 +208,13 @@ nav{
 .imageHomeWidth{
     width:100%;
 }
-.whoWork{
+
+.bgImage{
     background-image: url('./assets/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
+}
+.whoWork{
+    @extend .bgImage;
     background-position:center 300%;
 }
 
@@ -237,24 +241,21 @@ nav{
     }
 }
 
-.footer{
-    background-image: url('./assets//shared//desktop/bg-pattern-circle.svg');
-    background-repeat: no-repeat;
+.footer{ 
+    @extend .bgImage;
     background-position: center -40%;
 }
 .bigContainer{
 background-color: #ECF3F9;
 }
 .pricing{
+    @extend .bgImage;
     padding-top: 100px;
     height: 200px;
-    background-image: url('./assets//shared//desktop/bg-pattern-circle.svg');
-    background-repeat: no-repeat;
     background-position: calc(100% + 400px) -650px;
 }
 .about{
-        background-image: url('./assets//shared//desktop/bg-pattern-circle.svg');
-        background-repeat: no-repeat;
+        @extend .bgImage;
         padding-top: 100px;
         background-position: calc(100% + 400px) -650px;
 }
