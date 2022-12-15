@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WhoWork() {
   return (
-     <section className='bgDark py-5'>
+     <section className='bgDark py-5 whoWork'>
         <div className="container-md py-5">
                <div className='row g-5'>
                     <div className="col-lg-6 col-xl-7 align-self-center workOrder">

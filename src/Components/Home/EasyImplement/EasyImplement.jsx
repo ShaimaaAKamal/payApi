@@ -3,7 +3,7 @@ import EasyImplementImage from '../../../assets/home/desktop/illustration-easy-t
 
 export default function EasyImplement() {
   return (
-        <div className='container-md py-5'>
+        <div className='container-md py-5 pb-lg-0'>
             <section className="row gy-0">
                 <div className="col-lg-6">
                     <div className='text-center ps-5 ps-lg-0'>
