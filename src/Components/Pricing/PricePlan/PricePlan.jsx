@@ -5,7 +5,7 @@ export default function PricePlan({title,price,planOptionsTitles,planOptions,chi
     <div className='text-center text-lg-start position-relative'>
       <h2 className='h3 fmHeading textSite mb-3'>{title}</h2>
       <p className='mb-4 textLightBlue small text-center text-lg-start pe-3 pe-md-0 pe-lg-3'>{children}</p>
-      <h4 className='display-5 fmHeading textSanBlue fw-normal borderBottom pb-3'>{price}</h4>
+      <h4 className='display-5 fmHeading text-center text-lg-start textSanBlue fw-normal borderBottom pb-3'>{price}</h4>
       <div className='d-flex align-items-center py-2 option'>
         <i className="fa-solid fa-check textSite me-3"></i>
         <span className='textSanBlue'>Transactions</span>
