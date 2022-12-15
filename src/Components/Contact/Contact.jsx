@@ -20,7 +20,7 @@ export default function Contact() {
                   </div>
              </div>
              <div className="col-lg-6 col-xl-7 pt-lg-5 mt-lg-5">
-                <div className='ps-xl-5 ms-xl-5 pt-xl-5'>
+                <div className='ps-xl-5 ms-xl-5 pt-lg-5 mt-xl-5'>
                   <h4 className='fmHeading textLightBlue px-md-5  mx-md-5 px-lg-0 mx-lg-0 text-center text-lg-start mb-4 pb-3'>Join the thousands of innovators already building with us</h4>
                   <div>
                     <div className='row gy-4 '>
