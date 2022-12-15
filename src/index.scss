@@ -85,7 +85,7 @@ html{
         color:$linkWaterWhite
     }
     &:disabled{
-        background-color: $linkWaterWhite;
+        background-color: transparent !important;
         color:$lightBlue;
         border-color: $lightBlue;
     }
@@ -256,21 +256,47 @@ background-color: #ECF3F9;
      background-color: transparent;
      border-radius: unset;
      border:none;
-     border-bottom: .2px solid #8DA4B4;
+     border-bottom: .2px solid #8DA4B4 !important;
+     color:$sanBlue;
      &:focus{
         box-shadow: none;
         background-color: transparent;
-
+        border-bottom:1px solid $sanBlue !important;
      }
 }
    #message{
-     color: $lightBlue;  
+     color: $lightBlue ;
+     &:focus{
+        color:$sanBlue;
+     }
     }
     .form-check-input{
         background-color: #BCCBD6 !important;
         border-radius: unset !important;
         border:none !important;
+         &:focus{
+            box-shadow: none !important;
+        }
+        &:checked{
+            box-shadow: none !important;
+            background-color: #ba4270 !important;
+            color:#fff !important;
+        }
     }
+    .textLightSite{
+        color:$charmPink;
+    }
+
+     .contact .contactError{
+            border-bottom:1px solid $charmPink;
+            color:$charmPink;
+            &::placeholder{
+                color:$charmPink;
+            }
+             &:focus{
+                border-bottom:1px solid $charmPink !important;
+            }
+ }
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
