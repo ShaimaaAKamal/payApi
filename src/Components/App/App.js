@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Offline, Online } from "react-detect-offline";
 import Layout from '../Layout/Layout';
 import NotFound from '../NotFound/NotFound';
 import Home from '../Home/Home';
@@ -18,7 +19,16 @@ function App() {
   ])
   return (
     <div className="App">
-      <RouterProvider router={routes}></RouterProvider>
+       <Online>
+              <RouterProvider router={routes}></RouterProvider>
+       </Online>
+       <Offline>
+             <div className="vh-100 d-flex justify-content-center align-items-center">
+                     <div className="alert alert-secondary w-75 mx-auto text-center">
+                        Your are Offline
+                    </div>
+             </div>
+       </Offline>
     </div>
   );
 }
