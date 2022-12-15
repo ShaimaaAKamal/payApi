@@ -1,6 +1,8 @@
 import React from 'react';
 import PricePlan from './PricePlan/PricePlan';
 import ReadyToStart from '../ReadyToStart/ReadyToStart';
+import { Helmet } from 'react-helmet';
+
 
 export default function Pricing() {
   const plansTitles=['Free Plan','Basic Plan','Premium Plan'];
@@ -14,6 +16,10 @@ export default function Pricing() {
   const planOptionsTitles=['Investments','Assets','Liabilities','Income']
   return (
     <>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Pricing</title>
+       </Helmet>
     <div className='pricing'>
        <div className="container-md">
                     <h1 className='display-5 fmHeading text-center text-lg-start textSanBlue'>Pricing</h1>

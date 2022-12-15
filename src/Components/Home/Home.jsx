@@ -8,8 +8,7 @@ import financeImage from '../../assets/home/desktop/icon-personal-finances.svg';
 import paymentImage from '../../assets/home/desktop/icon-consumer-payments.svg';
 import coverageImage from '../../assets/home/desktop/icon-banking-and-coverage.svg';
 import ReadyToStart from '../ReadyToStart/ReadyToStart';
-
-
+import { Helmet } from 'react-helmet';
 export default function Home() {
   const titles=['Personal Finances','Banking & Coverage','Consumer Payments'];
   const descriptions=[
@@ -20,6 +19,10 @@ export default function Home() {
   const Images=[financeImage,coverageImage,paymentImage]
   return (
     <>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home</title>
+       </Helmet>
       <HomeHeading/>
       <WhoWork/>
       <EasyImplement/>

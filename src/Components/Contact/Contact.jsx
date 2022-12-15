@@ -1,10 +1,15 @@
 import React from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import ReadyToStart from '../ReadyToStart/ReadyToStart'
+import { Helmet } from 'react-helmet';
 
 export default function Contact() {
   return (
    <>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact</title>
+       </Helmet>
        <div className='pricing'>
           <div className="container-md">
                     <h1 className='display-5 fmHeading text-center text-lg-start textSanBlue contactTitle'>

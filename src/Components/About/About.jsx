@@ -3,11 +3,15 @@ import AboutLarge from '../../assets/about/desktop/image-team-members.jpg';
 import AboutMedium from '../../assets/about/tablet/image-team-members.jpg';
 import AboutSmall from '../../assets/about/mobile/image-team-members.jpg';
 import ReadyToStart from '../ReadyToStart/ReadyToStart'
-
+import { Helmet } from 'react-helmet';
 
 export default function About() {
   return (
     <>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>About</title>
+       </Helmet>
     <div className='about'>
         <div className="container-md">
            <div className="aboutHeading">
