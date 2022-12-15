@@ -130,6 +130,23 @@ nav{
       }
    
 }
+.bgNav.navbar-expand-lg{
+                background-color: $migBlue;
+                svg g{
+                    fill:$linkWaterWhite;
+                }
+                .nav-link{
+                    color:$lightBlue !important;
+                    &:hover,&.active{
+                        color:$linkWaterWhite !important;
+                    }
+                    }
+    
+                }
+
+.bgContainer{
+          background-color: $migBlue;
+                }
 
  .adjustBtn{
         display: block !important;
@@ -340,6 +357,20 @@ background-color: #ECF3F9;
                         width:auto;
                     }
             }
+
+            .bgNav.navbar-expand-lg{
+                background-color: $migBlue;
+                svg g{
+                    fill:$linkWaterWhite;
+                }
+                .nav-link{
+                    color:$lightBlue !important;
+                    &:hover,&.active{
+                        color:$linkWaterWhite !important;
+                    }
+                    }
+    
+                }
 
             .logoDiv{
                 width:70%;
