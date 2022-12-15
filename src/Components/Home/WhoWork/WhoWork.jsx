@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function WhoWork() {
   return (
@@ -57,7 +58,7 @@ export default function WhoWork() {
                                 <p className='small textLightBlue fw-light px-5 ps-lg-0 mb-4'>
                                     Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. 
                                 </p>
-                                <button className='secondaryLightBtn'>About Us</button>
+                                <Link className='secondaryLightBtn text-decoration-none' to='about'>About Us</Link>
                             </div>
                     </div>
                 </div>

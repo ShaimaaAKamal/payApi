@@ -19,7 +19,7 @@ export default function PricePlan({title,price,planOptionsTitles,planOptions,chi
         <span className='textSanBlue'>Identity</span>
       </div>
       {
-        planOptionsTitles.map((optionTitle,index) => <div key={indexh} className={`d-flex option  align-items-center pt-2 ${index === 3 ? 'pb-4':'pb-2'}`}>
+        planOptionsTitles.map((optionTitle,index) => <div key={index} className={`d-flex option  align-items-center pt-2 ${index === 3 ? 'pb-4':'pb-2'}`}>
         <i className={`fa-solid fa-check  me-3 ${planOptions[index]? 'textSite':'textTransparent'}`}></i>
         <span className={`${planOptions[index]? 'textSanBlue':'optionInactive'}`}>{optionTitle}</span>
       </div>)
